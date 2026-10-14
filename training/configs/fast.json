@@ -1,0 +1,20 @@
+{
+  "name": "MBDT-DualScale-256",
+  "initialization": "random",
+  "num_envs": 8,
+  "rollout_steps": 128,
+  "ppo_epochs": 10,
+  "batch_rows": 1024,
+  "microbatch_rows": 0,
+  "actor_lr": 2e-05,
+  "critic_lr": 4e-05,
+  "seed": 10,
+  "precision": "tf32",
+  "compiled_actor_inference": true,
+  "compiled_ppo": true,
+  "eval_every_updates": 50,
+  "eval_episodes": 64,
+  "eval_seed_start": 1401000,
+  "numerical_audit_every_updates": 200,
+  "checkpoint_every_updates": 50
+}
